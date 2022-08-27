@@ -131,3 +131,17 @@ let greeter = new Greeter('welcome to my Typescript Class');
 const classes: HTMLElement = document.getElementById('class');
 classes.innerHTML = `<h2>Class</h2>
                     <p>${greeter.greet()}</p>`;
+
+//Tarefa
+import { Person } from './person.ts ';
+
+let people = new Person('Ana Beatriz', 'Conceição', 'Walker', 20, [
+  'lalala@lala.com',
+  'lelele@lele.com',
+]);
+
+const person: HTMLElement = document.getElementById('person');
+person.innerHTML = `<h2>Person</h2>
+                    <p>${people.getInfos()}</p>
+                    <p>${people.getFullName()}</p>
+                    <p>${people.getBirthdayYear()}</p>`;
